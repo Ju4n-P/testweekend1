@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { Book } from './classes/book';
 import { User } from './classes/user';
 
 @Component({
@@ -22,8 +23,23 @@ export class AppComponent {
 
   public tab2:number[] = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
 
-  constructor(){
+  public isAvailable:Boolean = false
 
+  public bookName:string = "ALL ES6 Programming";
+  public PictureUrl:string = 'https://picsum.photos/200'
+
+  public books: Book[] = [
+    new Book('Book1'),
+    new Book('Book2'),
+    new Book('Book3'),
+    new Book('Book4'),
+  ]
+
+
+
+
+  constructor(){
+    this.isAvailable = true;
 
   }
 
@@ -42,4 +58,10 @@ export class AppComponent {
   //   return this.color === "blue" ? true : false;
   // }
 
+ 
+
+
+
+
 }
+2.21

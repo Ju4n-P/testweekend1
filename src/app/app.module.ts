@@ -3,10 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MovementDirective } from './directives/movement.directive';
+import { BookPreviewComponent } from './book-preview/book-preview.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MovementDirective,
+    BookPreviewComponent
   ],
   imports: [
     BrowserModule,
