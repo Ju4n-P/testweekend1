@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { Role } from './@interface/enum/role';
+import { IUser } from './@interface/user';
 import { Book } from './classes/book';
-import { User } from './classes/user';
+import { User } from './classes/user'
 
 @Component({
   selector: 'app-root',
@@ -9,6 +11,14 @@ import { User } from './classes/user';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+  public usersWithInterface: IUser = {
+    "num":200,
+    "firstname": 'Polo',
+    "lastname": "Hendrix",
+    "role": Role.ADMIN
+  };
+
   public title: string = 'My First Week ';
   public user: User = new User(20, 'lol', 'sda');
 
@@ -19,14 +29,14 @@ export class AppComponent {
   ];
 
 
-  public tab:number[] = [1,2,3,4,5]
+  public tab: number[] = [1, 2, 3, 4, 5]
 
-  public tab2:number[] = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
+  public tab2: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
 
-  public isAvailable:Boolean = false
+  public isAvailable: Boolean = false
 
-  public bookName:string = "ALL ES6 Programming";
-  public PictureUrl:string = 'https://picsum.photos/200'
+  public bookName: string = "ALL ES6 Programming";
+  public PictureUrl: string = 'https://picsum.photos/200'
 
   public books: Book[] = [
     new Book('Book1'),
@@ -35,27 +45,27 @@ export class AppComponent {
     new Book('Book4'),
   ]
 
-  public bookRate:number;
+  public bookRate: number;
 
-  public fontSizePx:number = 16;
+  public fontSizePx: number = 16;
 
   public today: number = Date.now();
 
-  constructor(){
+  constructor() {
     this.isAvailable = true;
 
   }
 
 
-  public helloWorld():string{
+  public helloWorld(): string {
     return 'hello world from the function helloWorld()'
   }
 
 
-  public name:string = "Robin";
-  public color:string = 'red';
-  
-  public onRate(rateValue:number){
+  public name: string = "Robin";
+  public color: string = 'red';
+
+  public onRate(rateValue: number) {
     console.log(rateValue);
     this.bookRate = rateValue;
   }
@@ -64,7 +74,7 @@ export class AppComponent {
   //   return this.color === "blue" ? true : false;
   // }
 
- 
+
 
 
 

@@ -17,12 +17,13 @@ import { TruncatePipe } from './pipe/truncate.pipe';
     BookPreviewComponent,
     SizerComponent,
     GetCharPipe,
-    TruncatePipe
+    TruncatePipe,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

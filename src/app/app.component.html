@@ -2,13 +2,26 @@
 <!-- <p> {{ user | json }}</p> -->
 <p appMovement=red> {{helloWorld()}}</p>
 
+
+<hr>
+
+<h3> Exo INTERFACE :</h3>
+
+{{usersWithInterface.num}} <br>
+{{usersWithInterface.firstname}}<br>
+{{usersWithInterface.lastname}}<br>
+{{usersWithInterface.role}}<br>
+
+
 <hr>
 <h2>pipe Exo: |</h2>
 {{ "Hurluberlu" | getChar :3}} Hurluberlu <br>
 {{ "Uber" | getChar :2}} Uber <br>
 {{ "Moto" | getChar :4}} Moto <br>
 <h3>trunc sur 20mots :</h3>
-{{"Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus mollitia aliquid praesentium explicabo sequi, beatae ratione atque optio totam id, soluta non eius ipsam unde suscipit molestiae assumenda deleniti sit?" | truncate: 20}}
+{{"Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus mollitia aliquid praesentium explicabo sequi,
+beatae ratione atque optio totam id, soluta non eius ipsam unde suscipit molestiae assumenda deleniti sit?" | truncate:
+20}}
 <hr>
 
 <app-sizer [(size)]="fontSizePx"></app-sizer>
@@ -18,7 +31,7 @@
 
 <hr>
 {{today | date }} <br>
-{{today | date: 'd MMM y' }} | date:'d MMM y'<br> 
+{{today | date: 'd MMM y' }} | date:'d MMM y'<br>
 
 <div *ngFor="let item of {'b': 1, 'a': 1} | keyvalue">
   {{ item.key }} - {{ item.value }}
@@ -101,7 +114,7 @@
 
 <hr>
 
-<h2 appMovement="skyblue" >Ex Switch case :</h2>
+<h2 appMovement="skyblue">Ex Switch case :</h2>
 <ul>
   <ng-container *ngFor="let element of tab2">
     <ng-container [ngSwitch]="true">
@@ -131,6 +144,3 @@
 </p>
 
 <h3>sadsadsadsadsad a depuis dev</h3>
-
-
-
