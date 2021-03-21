@@ -35,8 +35,10 @@ export class AppComponent {
     new Book('Book4'),
   ]
 
+  public bookRate:number;
 
 
+  public fontSizePx:number = 16;
 
   constructor(){
     this.isAvailable = true;
@@ -50,9 +52,12 @@ export class AppComponent {
 
 
   public name:string = "Robin";
-  public color:string = 'red'
+  public color:string = 'red';
   
-
+  public onRate(rateValue:number){
+    console.log(rateValue);
+    this.bookRate = rateValue;
+  }
 
   // public displayBlue(): boolean {
   //   return this.color === "blue" ? true : false;

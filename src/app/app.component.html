@@ -2,14 +2,19 @@
 <!-- <p> {{ user | json }}</p> -->
 <p appMovement=red> {{helloWorld()}}</p>
 
+<hr>
+
+<app-sizer [(size)]="fontSizePx"></app-sizer>
+<label>FontSize (px): <input [(ngModel)]="fontSizePx"></label>
+<hr>
+
+<app-book-preview [book]="books[0]" (rate)="onRate($event)"></app-book-preview>
+{{bookRate}}
 
 <hr>
-<app-book-preview [book]="books[0]"></app-book-preview>
 
-<hr>
 <h4>test de faire de l'insertion d'image avec le property binding</h4>
 <img [alt]='bookName' [src]="PictureUrl">
-
 <img src="{{PictureUrl}}" alt="{{bookName}}">
 <button [disabled]="!isAvailable">BOUTON</button>
 

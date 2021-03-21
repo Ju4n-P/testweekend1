@@ -5,16 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MovementDirective } from './directives/movement.directive';
 import { BookPreviewComponent } from './book-preview/book-preview.component';
+import { SizerComponent } from './sizer/sizer.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     MovementDirective,
-    BookPreviewComponent
+    BookPreviewComponent,
+    SizerComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
