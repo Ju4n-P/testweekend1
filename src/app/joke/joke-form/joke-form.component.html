@@ -1,0 +1,8 @@
+<p>joke-form works!</p>
+<p>
+<input type="text" placeholder="enter the setup" #setup>
+</p>
+<p>
+    <input type="text" placeholder="enter the punchline" #punchline>
+</p>
+<button (click)="createJoke(setup.value, punchline.value)">create</button>

@@ -1,0 +1,6 @@
+<div>
+    <h4><ng-content select=".setup"></ng-content></h4>
+    <p [hidden]="data.hide"><ng-content select=".punchline"></ng-content></p>
+    <button (click)="data.toggle()">tell me</button>
+
+</div>

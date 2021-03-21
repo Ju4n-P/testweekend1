@@ -9,6 +9,11 @@ import { SizerComponent } from './sizer/sizer.component';
 import { FormsModule } from '@angular/forms';
 import { GetCharPipe } from './pipe/get-char.pipe';
 import { TruncatePipe } from './pipe/truncate.pipe';
+import { NotfoundComponent } from './notfound/notfound.component';
+import { HeaderComponent } from './@shared/header/header.component';
+import { JokeListComponent } from './joke/joke-list/joke-list.component';
+import { JokeFormComponent } from './joke/joke-form/joke-form.component';
+import { JokeComponent } from './joke/joke/joke.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +23,11 @@ import { TruncatePipe } from './pipe/truncate.pipe';
     SizerComponent,
     GetCharPipe,
     TruncatePipe,
+    NotfoundComponent,
+    HeaderComponent,
+    JokeListComponent,
+    JokeFormComponent,
+    JokeComponent,
 
   ],
   imports: [
