@@ -17,6 +17,9 @@ export class UserService {
 
   }
   
+  public getData(){
+    this.getAll();
+  }
 
   public getAll():User[]{
     return this.users;

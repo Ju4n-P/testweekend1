@@ -15,6 +15,7 @@ import { JokeListComponent } from './joke/joke-list/joke-list.component';
 import { JokeFormComponent } from './joke/joke-form/joke-form.component';
 import { JokeComponent } from './joke/joke/joke.component';
 import { UserComponent } from './user/user.component';
+import { ObservableComponent } from './observable/observable.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { UserComponent } from './user/user.component';
     JokeFormComponent,
     JokeComponent,
     UserComponent,
+    ObservableComponent,
 
   ],
   imports: [
