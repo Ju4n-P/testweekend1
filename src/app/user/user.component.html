@@ -1,0 +1,9 @@
+<p>user works!</p>
+{{users | json}}
+
+<ul>
+    <li *ngFor="let user of users">
+         {{user.num}} , {{user.firstname}} , {{user.lastname}} 
+         <button (click)="removeUser(user)">x</button>
+    </li>
+</ul>
